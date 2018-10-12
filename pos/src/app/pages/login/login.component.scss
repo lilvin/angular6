@@ -1,0 +1,87 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+.login-container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #C0C0C0;
+    .card{
+        padding: 15px;
+        width: 100%;
+        background-color: #fff;
+        .btn-link{
+            padding: 0;
+            &.forgot{
+                font-size: 14px;
+            }
+            &:hover{
+                color: #867F7F;               
+            }
+        }
+       
+    }
+}
+.auth-sep {
+    margin-top: 32px;
+    margin-bottom: 24px;
+    line-height: 20px;
+    font-size: 15px;
+    text-align: center;
+    display: block;
+    position: relative;
+    & > span {
+      display: table-cell;
+      width: 30%;
+      white-space: nowrap;
+      padding: 0 14px;
+      color: #F6F3F3;
+      & > span {
+        margin-top: -11px;
+        display: block;
+        font-weight: 300;
+      }
+    }
+    &:before, &:after {
+      border-top: solid 1px #F6F3F3;
+      content: "";
+      height: 1px;
+      width: 35%;
+      display: table-cell;
+    }
+  }
+.login-help{
+    margin: 0;
+    padding: 0;
+    li{
+        list-style: none;
+        display: inline-block;
+        margin-left: 10px;
+        &:first-child {
+            margin-left:0;
+        }
+        i{
+            cursor: pointer;
+            transition: all 0.1s ease;
+            color: #fff;
+            padding: 9px 9px 6px 9px;
+            font-size: 12px;
+            background-color: #867F7F;
+            &.socicon-facebook{
+                background-color: #867F7F;
+            }
+            &.socicon-twitter{
+                background-color: #867F7F;
+            }
+            &.socicon-google{
+                background-color: #867F7F;
+            }
+            &:hover{                         
+                opacity: 0.9;     
+            }
+        }
+    }
+}
+
